@@ -105,7 +105,7 @@ int main() {
   	for (int i = 0; i < THREAD_N; i++) {
     	if(pthread_join(pool[i], NULL) != 0) {
     		perror("pthread_join");
-    		exit(7)
+    		exit(7);
     	}
   	}
   	delete[] pool;
